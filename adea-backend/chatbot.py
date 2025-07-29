@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 # Replace with your Voiceflow API key
-API_KEY = "VF.DM.6795c19d12f08bcbb5f778d8.O9aqxLFyvDwdACM8"
+API_KEY = os.getenv('API_KEY')
 
 
 # Interact with Voiceflow API
