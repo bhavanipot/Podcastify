@@ -7,9 +7,9 @@ import heapq
 # Load spaCy's English NLP model
 nlp = spacy.load("en_core_web_sm")
 
-API_BASE_URL = "https://api.sws.speechify.com"
-API_KEY = "loXPtXHd0zvWCahM7fhZeZZpuabTETeTa6Y78oPKDlg="
-VOICE_ID = "george"
+API_BASE_URL = os.getenv('API_BASE_URL')
+API_KEY = os.getenv('API_KEY')
+VOICE_ID = os.getenv('VOICE_ID')
 
 # Function to summarize the text using spaCy
 def summarize_text_spacy(input_text):
